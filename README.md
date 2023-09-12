@@ -36,6 +36,6 @@ npm run dev
 
 Go to [http://localhost:3000](http://localhost:3000) to see an overview of your founder toolbox and to start the tutorial.
 
-If you need help after the tutorial, dm me on [Twitter](https://twitter.com/gitmazzone) or mazzone.dev@gmail.com
+If you need help after the tutorial, dm me on [Twitter](https://twitter.com/gitmazzone) or email me @ mazzone.dev@gmail.com
 
 From one solopreneur to another -- thank you for your support. ♡
