@@ -1,23 +1,19 @@
-.container {
-  @apply flex flex-col justify-center items-center gap-10 min-h-screen;
+.bigCard {
+  @apply bg-slate-100 px-5 justify-start w-72;
+  @apply sm:w-[25rem];
+  @apply md:w-[32rem];
+  @apply hover:bg-slate-200 active:bg-slate-100;
 
-  .bigCard {
-    @apply bg-slate-100 px-5 justify-start w-72;
-    @apply sm:w-[25rem];
-    @apply md:w-[32rem];
-    @apply hover:bg-slate-200 active:bg-slate-100;
+  svg {
+    @apply h-6 w-6;
+  }
 
-    svg {
-      @apply h-6 w-6;
-    }
+  .iconBg {
+    @apply bg-orange-300 p-2 rounded-full;
+  }
 
-    .iconBg {
-      @apply bg-orange-300 p-2 rounded-full;
-    }
-
-    .arrow {
-      @apply ml-auto hidden;
-      @apply md:inline-block;
-    }
+  .arrow {
+    @apply ml-auto hidden;
+    @apply md:inline-block;
   }
 }

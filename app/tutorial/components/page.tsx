@@ -1,10 +1,11 @@
 'use client';
 
 import styles from './page.module.css';
+import '@/styles/globals.css';
 
 const Components = () => {
   return (
-    <div className={styles.container}>
+    <div className={'pageContainer'}>
       <h1>Components</h1>
 
       <p>

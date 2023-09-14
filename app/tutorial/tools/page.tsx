@@ -4,7 +4,7 @@ import styles from './page.module.css';
 
 const Tools = () => {
   return (
-    <div className={styles.container}>
+    <div className={'pageContainer'}>
       <h1>Tools</h1>
     </div>
   );

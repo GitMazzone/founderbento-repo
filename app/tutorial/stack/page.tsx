@@ -4,7 +4,7 @@ import styles from './page.module.css';
 
 const Stack = () => {
   return (
-    <div className={styles.container}>
+    <div className={'pageContainer'}>
       <h1>Stack</h1>
     </div>
   );

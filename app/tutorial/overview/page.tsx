@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Overview = () => {
   return (
-    <div className={styles.container}>
+    <div className={'pageContainer gap-10'}>
       <h1>Overview</h1>
 
       <section className={styles.cardContainer}>

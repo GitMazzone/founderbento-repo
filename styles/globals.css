@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-  @apply text-5xl font-bold tracking-wide;
+@layer base {
+  h1 {
+    @apply text-5xl font-bold tracking-wide;
+  }
+}
+
+@layer components {
+  .pageContainer {
+    @apply flex flex-col justify-center items-center gap-3 min-h-screen;
+  }
 }
