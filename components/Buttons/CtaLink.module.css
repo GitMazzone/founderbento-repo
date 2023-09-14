@@ -1,0 +1,5 @@
+.button {
+  @apply flex items-center gap-3;
+  @apply bg-red-500 text-white font-bold tracking-wide py-3 px-7 rounded-full;
+  @apply hover:bg-red-600 active:bg-red-500;
+}
