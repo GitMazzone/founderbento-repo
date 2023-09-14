@@ -39,7 +39,7 @@ const Overview = () => {
       </section>
 
       <section className={styles.cardContainer}>
-        <Link href={'/tutorial/components'}>
+        <Link href={'/tutorial/tools'}>
           <Card classNames={styles.bigCard}>
             <>
               <span className={styles.iconBg}>
