@@ -1,7 +1,6 @@
 'use client';
 
 import { CtaLink } from '@/components';
-import styles from './page.module.css';
 import { ArrowRight } from '@phosphor-icons/react';
 
 const Tutorial = () => {
@@ -9,7 +8,8 @@ const Tutorial = () => {
     <div className={'pageContainer gap-10'}>
       <h1>Welcome aboard</h1>
       <p>
-        Strap in! You're not gonna believe how fast you launch this product.
+        Strap in! You&apos;re not gonna believe how fast you launch this
+        product.
       </p>
       <CtaLink href='/tutorial/overview'>
         <>

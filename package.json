@@ -4,7 +4,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint '**/*.{ts,tsx}' --cache --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --cache --fix",
+    "*.css": "stylelint --cache --fix"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.10",
@@ -23,7 +32,13 @@
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
     "encoding": "^0.1.13",
+    "eslint": "^8.49.0",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^12.0.1"
   }

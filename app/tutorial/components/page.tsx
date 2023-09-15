@@ -1,6 +1,5 @@
 'use client';
 
-import styles from './page.module.css';
 import '@/styles/globals.css';
 
 const Components = () => {
@@ -31,7 +30,7 @@ const Components = () => {
         Newsletter Signup: Simple email capture form.
         <br />
         Social Proof: Logos of companies that use your product or media where
-        it's been featured.
+        it&apos;s been featured.
         <br />
         Image/Video Gallery: To showcase the product in action.
         <br />
