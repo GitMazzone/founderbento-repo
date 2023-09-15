@@ -2,7 +2,13 @@
 
 import { Card } from '@/components';
 import styles from './page.module.css';
-import { ArrowRight, Code, PuzzlePiece, Toolbox } from '@phosphor-icons/react';
+import {
+  ArrowRight,
+  Code,
+  PuzzlePiece,
+  Recycle,
+  Toolbox,
+} from '@phosphor-icons/react';
 import Link from 'next/link';
 
 const Overview = () => {
@@ -10,7 +16,7 @@ const Overview = () => {
     <div className={'pageContainer gap-10'}>
       <h1>Overview</h1>
 
-      <section className={styles.cardContainer}>
+      <div className={styles.cardContainer}>
         <Link href={'/tutorial/stack'}>
           <Card classNames={styles.bigCard}>
             <>
@@ -22,9 +28,23 @@ const Overview = () => {
             </>
           </Card>
         </Link>
-      </section>
+      </div>
 
-      <section className={styles.cardContainer}>
+      <div className={styles.cardContainer}>
+        <Link href={'/tutorial/template-pages'}>
+          <Card classNames={styles.bigCard}>
+            <>
+              <span className={styles.iconBg}>
+                <Recycle />
+              </span>
+              Templates for common pages
+              <ArrowRight className={styles.arrow} />
+            </>
+          </Card>
+        </Link>
+      </div>
+
+      <div className={styles.cardContainer}>
         <Link href={'/tutorial/components'}>
           <Card classNames={styles.bigCard}>
             <>
@@ -36,9 +56,9 @@ const Overview = () => {
             </>
           </Card>
         </Link>
-      </section>
+      </div>
 
-      <section className={styles.cardContainer}>
+      <div className={styles.cardContainer}>
         <Link href={'/tutorial/tools'}>
           <Card classNames={styles.bigCard}>
             <>
@@ -50,7 +70,7 @@ const Overview = () => {
             </>
           </Card>
         </Link>
-      </section>
+      </div>
     </div>
   );
 };
