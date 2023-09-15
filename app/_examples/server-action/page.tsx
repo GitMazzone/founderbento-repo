@@ -25,7 +25,7 @@ export default async function ServerAction() {
 
   return (
     <form action={addTodo}>
-      <input name="title" />
+      <input name='title' />
     </form>
   );
 }

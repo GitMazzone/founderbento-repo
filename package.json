@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint '**/*.{ts,tsx}' --cache --fix"
+    "lint": "eslint '**/*.{ts,tsx}' --cache --fix && prettier --write './{app,components,config,styles}/**/*.{ts,tsx,js,jsx,json,css}'"
   },
   "husky": {
     "hooks": {
@@ -12,10 +12,11 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx}": "eslint --cache --fix",
-    "*.css": "stylelint --cache --fix"
+    "**/*.{ts,tsx}": "eslint --cache --fix",
+    "./{app,components,config,styles}/**/*.{ts,tsx,js,jsx,json,css}": "prettier --write"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
     "@phosphor-icons/react": "^2.0.10",
     "@supabase/auth-helpers-nextjs": "latest",
     "@supabase/supabase-js": "latest",
