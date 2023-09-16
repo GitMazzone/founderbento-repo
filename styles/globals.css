@@ -4,7 +4,26 @@
 
 @layer base {
   h1 {
-    @apply text-5xl font-bold tracking-wide;
+    @apply text-5xl sm:text-6xl md:text-7xl font-bold tracking-wide;
+  }
+  h2 {
+    @apply text-4xl sm:text-5xl md:text-6xl font-semibold tracking-wide;
+  }
+  h3 {
+    @apply text-3xl sm:text-4xl font-medium tracking-normal;
+  }
+  h4 {
+    @apply text-2xl sm:text-3xl font-medium tracking-normal;
+  }
+  h5 {
+    @apply text-xl font-medium tracking-normal;
+  }
+  p {
+    @apply text-base sm:text-lg font-normal tracking-normal;
+  }
+
+  aside p {
+    @apply text-sm sm:text-base font-light;
   }
 }
 

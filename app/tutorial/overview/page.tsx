@@ -5,8 +5,9 @@ import styles from './page.module.css';
 import {
   ArrowRight,
   Code,
+  Layout,
   PuzzlePiece,
-  Recycle,
+  Ruler,
   Toolbox,
 } from '@phosphor-icons/react';
 import Link from 'next/link';
@@ -35,7 +36,7 @@ const Overview = () => {
           <Card classNames={styles.bigCard}>
             <>
               <span className={styles.iconBg}>
-                <Recycle />
+                <Layout />
               </span>
               Templates for common pages
               <ArrowRight className={styles.arrow} />
@@ -52,6 +53,20 @@ const Overview = () => {
                 <PuzzlePiece />
               </span>
               Component library
+              <ArrowRight className={styles.arrow} />
+            </>
+          </Card>
+        </Link>
+      </div>
+
+      <div className={styles.cardContainer}>
+        <Link href={'/tutorial/design-language'}>
+          <Card classNames={styles.bigCard}>
+            <>
+              <span className={styles.iconBg}>
+                <Ruler />
+              </span>
+              Design language
               <ArrowRight className={styles.arrow} />
             </>
           </Card>
