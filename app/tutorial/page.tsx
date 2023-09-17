@@ -5,15 +5,12 @@ import { ArrowRight } from '@phosphor-icons/react';
 
 const Tutorial = () => {
   return (
-    <div className={'pageContainer gap-10'}>
-      <h1>Welcome aboard</h1>
-      <p>
-        Strap in! You&apos;re not gonna believe how fast you launch this
-        product.
-      </p>
+    <div className={'flex flex-col items-center gap-10'}>
+      <h1>Welcome aboard!</h1>
+      <p>This is the start of something wonderful. And fast.</p>
       <CtaLink href='/tutorial/overview'>
         <>
-          Blastoff
+          Jump right in
           <ArrowRight size={24} />
         </>
       </CtaLink>

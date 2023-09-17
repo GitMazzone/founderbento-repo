@@ -29,7 +29,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'react'],
   rules: {
     semi: ['error', 'always'],
-    quotes: ['error', 'single'],
+    quotes: ['error', 'single', { 'allowTemplateLiterals': true, 'avoidEscape': true }],
     '@typescript-eslint/no-explicit-any': 1,
   },
 };

@@ -8,7 +8,7 @@ export default function TutorialLayout({
   return (
     <>
       <Navbar />
-      {children}
+      <div className={'pageContainer'}>{children}</div>
     </>
   );
 }

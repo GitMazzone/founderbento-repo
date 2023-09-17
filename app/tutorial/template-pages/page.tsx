@@ -1,8 +1,6 @@
-'use client';
-
 const TemplatePages = () => {
   return (
-    <div className={'pageContainer'}>
+    <div>
       <h1>Template Pages</h1>
     </div>
   );

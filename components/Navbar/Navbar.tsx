@@ -7,11 +7,11 @@ import { FunctionComponent } from 'react';
 
 export const Navbar: FunctionComponent = () => {
   return (
-    <nav className='bg-orange-300 text-black p-4 w-full'>
+    <nav className='bg-white border-b-2 border-black p-4 w-full'>
       <div className='flex items-center justify-between'>
         <Rocket color='#000' size={38} className='rotate-45' />
         {/* Links for medium screens and up */}
-        <div className='hidden md:flex space-x-4 text-white'>
+        <div className='hidden md:flex space-x-4'>
           <a href='#'>Home</a>
           <a href='#'>About</a>
           <a href='#'>Contact</a>

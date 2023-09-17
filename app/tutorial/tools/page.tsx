@@ -1,8 +1,6 @@
-'use client';
-
 const Tools = () => {
   return (
-    <div className={'pageContainer'}>
+    <div>
       <h1>Tools</h1>
     </div>
   );

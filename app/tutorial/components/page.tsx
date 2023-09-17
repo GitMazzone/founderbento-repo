@@ -1,10 +1,6 @@
-'use client';
-
-import '@/styles/globals.css';
-
 const Components = () => {
   return (
-    <div className={'pageContainer'}>
+    <>
       <h1>Components</h1>
 
       <p>
@@ -51,7 +47,7 @@ const Components = () => {
         Notification Bar: For announcements, offers, etc.
         <br />
       </p>
-    </div>
+    </>
   );
 };
 

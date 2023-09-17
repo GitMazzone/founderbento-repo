@@ -14,7 +14,7 @@ import Link from 'next/link';
 
 const Overview = () => {
   return (
-    <div className={'pageContainer gap-10'}>
+    <div className={'flex flex-col gap-5'}>
       <h1>Overview</h1>
 
       <div className={styles.cardContainer}>
@@ -24,7 +24,7 @@ const Overview = () => {
               <span className={styles.iconBg}>
                 <Code />
               </span>
-              Learn about your founder stack
+              Your founder stack
               <ArrowRight className={styles.arrow} />
             </>
           </Card>
@@ -80,7 +80,7 @@ const Overview = () => {
               <span className={styles.iconBg}>
                 <Toolbox />
               </span>
-              Amazing tools
+              Third-party tools
               <ArrowRight className={styles.arrow} />
             </>
           </Card>

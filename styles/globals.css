@@ -29,6 +29,6 @@
 
 @layer components {
   .pageContainer {
-    @apply flex flex-col justify-center items-center gap-3 min-h-screen;
+    @apply flex flex-col min-h-screen p-3 md:p-10;
   }
 }
