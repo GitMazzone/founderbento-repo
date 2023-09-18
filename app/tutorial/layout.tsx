@@ -1,5 +1,3 @@
-import { Navbar } from '@/components';
-
 export default function TutorialLayout({
   children,
 }: {
@@ -7,7 +5,6 @@ export default function TutorialLayout({
 }) {
   return (
     <>
-      <Navbar />
       <div className={'pageContainer'}>{children}</div>
     </>
   );

@@ -1,5 +1,6 @@
 import { Merriweather } from 'next/font/google';
 import '../styles/globals.css';
+import { Navbar } from '@/components';
 
 // TODO: move font to fonts.ts, pick global default & move MW to heading only
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang='en' className={merriweather.className}>
       <body>
         <main className='min-h-screen flex flex-col items-center'>
+          <Navbar />
           {children}
         </main>
       </body>
