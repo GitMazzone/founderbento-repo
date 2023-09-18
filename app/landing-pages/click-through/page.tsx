@@ -7,10 +7,10 @@ import Image from 'next/image';
 const ClickThroughLanding = () => {
   return (
     // TODO: spacing component for between and within sections
-    <div className={'pageContainer gap-5'}>
+    <div className={'pageContainer'}>
       {/* Hero section */}
       <div className={'flex flex-col items-center gap-5 text-center'}>
-        <h1>A unique value proposition that&apos;s impossible to say no to</h1>
+        <h1>A unique value proposition for an easy YES</h1>
         <p>Dream outcome X while avoiding pain point Y, all in time frame Z.</p>
         {/* TODO: use theme colors */}
         <CtaLink href='#'>Enticing CTA</CtaLink>
@@ -32,7 +32,7 @@ const ClickThroughLanding = () => {
       </div>
 
       {/* TODO: spacer, refactor */}
-      <div className={'py-12'}></div>
+      <div className={'py-14'}></div>
 
       {/* Problem, product, results section */}
       {/* Text + CTA + graphic */}
@@ -62,7 +62,7 @@ const ClickThroughLanding = () => {
       </div>
 
       {/* TODO: spacer, refactor */}
-      <div className={'py-12'}></div>
+      <div className={'py-14'}></div>
 
       {/* How it works */}
     </div>
