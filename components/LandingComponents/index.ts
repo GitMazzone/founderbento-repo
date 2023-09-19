@@ -1,0 +1,1 @@
+export { TextCtaImage } from './TextCtaImage';
