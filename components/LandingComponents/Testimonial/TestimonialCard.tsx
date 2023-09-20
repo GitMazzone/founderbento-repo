@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Card } from '../Cards';
+import { Card } from '../../Cards';
 import { Star } from '@phosphor-icons/react';
 
 interface TestimonialCardProps {

@@ -110,15 +110,15 @@ const ClickThroughLanding = () => {
 
         <TextCtaImage
           text={'Minimal process to get your customer to their first win.'}
-          imgSrc={'/images/landing-demo-2.webp'}
-          imgAlt={'Woman using a laptop, working on her next startup idea'}
+          imgSrc={'/images/landing-demo-3.webp'}
+          imgAlt={
+            'Two students using a laptop, working on their next startup idea'
+          }
           imgHeight={250}
           imgWidth={500}
           blurDataURL={
             'data:image/webp;base64,UklGRm4EAABXRUJQVlA4WAoAAAAgAAAAcwEAuQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDgggAIAABAeAJ0BKnQBugA+7XCxVammJCMh8PnpMB2JaW7fcRijyP9TbgA7Yz/qPddgAcB7crY30XSoEpPHUxwasRVMDshxZPWeX9VeQp/xHtVjJ9jfFGS7DvGsOH3yeI3Koz7Q1H+KNzno9Z79E5O4687QSttFJq6IqbNiBzMnvlDiv/4m8YJvY6k8oc57SkMKbvpUF5s7TrCnb5L4GVvKelVAdTYHKw++TuNOnTtUdp9gXzOTohWWuAa0IiK2I1WNafR950KXpTnClLKk8mmdOLftqauoblmLPDRvYf4oRbOWjXEEdytlETuau0yt8mRhVz5/TKKuZT6SSBY+wAD+8OB8nqeClGKardtxA9b9ct0IxnwH9iZtsk1mZkToEQRowMe6AAyjYkxxgZrb8HY0Z67i/BwQD5KfncraKOwsBLZ8sk24Cf6vETsqrbo5HY9la7BbWfPoU+2b/5tR4m7UXzZa3a/5WfpNw8++RL9KBkQ9DBM6H23JHOxHHb6bmKNENnjTFYmCE8DAOtfiLF6gACqg4LP+RrZ5+X4oWO9AZnlmAErxFDk6siTRyprtHzohLxe2id4Yp23TdNqcfUnGQKHzX5cQ5bBa6EPwHgrcOweSuk+1pfiEfSryfdim+GFJUpXv4AKuDHRyhRuQ9aD6loTKjjtgHAPKZqHV9his3YiDLZiIk0jjv/TMuOVrm8scrC/IyWkdVxEsqeRhAN0RTaTjOZU3UVeBLoYx7celZ2Uw2aEIUklRhV3v7W3634Ocdn9k4pMPunp+AnC5/RUNpM8bQdKhKLNiRSCM3hPNKhPOBhn/LvGV34JCz6Ph+hAPdpKUEaYSfvtmCK72JcA6ClAAAAA='
           }
-          ctaLink={'#'}
-          ctaText={'Enticing CTA'}
           imageOnRight={true}
         />
 
@@ -126,8 +126,10 @@ const ClickThroughLanding = () => {
           text={
             'The first win! So glad they chose your offer, momentum is building!'
           }
-          imgSrc={'/images/landing-demo-2.webp'}
-          imgAlt={'Woman using a laptop, working on her next startup idea'}
+          imgSrc={'/images/landing-demo-4.webp'}
+          imgAlt={
+            'Two coworkers walking down a street in NYC, on their way to work'
+          }
           imgHeight={250}
           imgWidth={500}
           blurDataURL={

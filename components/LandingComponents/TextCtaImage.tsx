@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FunctionComponent } from 'react';
-import { CtaLink } from '../index';
+import { CtaLink } from '../Buttons';
 
 interface TextCtaImageProps {
   text: string;
