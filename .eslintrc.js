@@ -20,6 +20,12 @@ module.exports = {
         sourceType: 'script',
       },
     },
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        'react/prop-types': 'off'
+      }
+    }
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {

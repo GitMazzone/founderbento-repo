@@ -1,4 +1,0 @@
-.card {
-  @apply flex gap-3 items-center justify-center;
-  @apply p-4 bg-white rounded-lg shadow-md;
-}

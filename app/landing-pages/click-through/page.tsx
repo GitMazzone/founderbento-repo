@@ -1,7 +1,36 @@
 'use client';
 
-import { Callout, CtaLink, TextCtaImage } from '@/components';
+import { Callout, CtaLink, TestimonialGrid, TextCtaImage } from '@/components';
+import type { Testimonial } from '@/components';
 import { Megaphone } from '@phosphor-icons/react';
+
+const testimonials: Testimonial[] = [
+  {
+    imageSrc: '/images/testimonial-1.png',
+    name: 'Alice',
+    testimonial: 'This product is amazing!',
+  },
+  {
+    imageSrc: '/images/testimonial-1.png',
+    name: 'Alice',
+    testimonial: 'This product is amazing!',
+  },
+  {
+    imageSrc: '/images/testimonial-1.png',
+    name: 'Alice',
+    testimonial: 'This product is amazing!',
+  },
+  {
+    imageSrc: '/images/testimonial-1.png',
+    name: 'Alice',
+    testimonial: 'This product is amazing!',
+  },
+  {
+    imageSrc: '/images/testimonial-1.png',
+    name: 'Alice',
+    testimonial: 'This product is amazing!',
+  },
+];
 
 const ClickThroughLanding = () => {
   return (
@@ -31,7 +60,7 @@ const ClickThroughLanding = () => {
       </div>
 
       {/* TODO: spacer, refactor */}
-      <div className={'py-14'}></div>
+      <div className={'py-12'}></div>
 
       <Callout>
         <p>
@@ -41,7 +70,7 @@ const ClickThroughLanding = () => {
       </Callout>
 
       {/* TODO: spacer, refactor */}
-      <div className={'py-14'}></div>
+      <div className={'py-12'}></div>
 
       {/* Problem, product, results section */}
       <TextCtaImage
@@ -61,15 +90,12 @@ const ClickThroughLanding = () => {
       />
 
       {/* TODO: spacer, refactor */}
-      <div className={'py-10'}></div>
+      <div className={'py-12'}></div>
 
       {/* How it works */}
-      <h2 className={'text-center'}>How it works</h2>
+      <div className={'flex flex-col gap-5'}>
+        <h2 className={'text-center'}>How it works</h2>
 
-      {/* TODO: spacer, refactor */}
-      <div className={'py-6'}></div>
-
-      <div className={'flex flex-col'}>
         <TextCtaImage
           text={'Pain-free, easy entry point into your offer.'}
           imgSrc={'/images/landing-demo-2.webp'}
@@ -90,6 +116,8 @@ const ClickThroughLanding = () => {
           blurDataURL={
             'data:image/webp;base64,UklGRm4EAABXRUJQVlA4WAoAAAAgAAAAcwEAuQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDgggAIAABAeAJ0BKnQBugA+7XCxVammJCMh8PnpMB2JaW7fcRijyP9TbgA7Yz/qPddgAcB7crY30XSoEpPHUxwasRVMDshxZPWeX9VeQp/xHtVjJ9jfFGS7DvGsOH3yeI3Koz7Q1H+KNzno9Z79E5O4687QSttFJq6IqbNiBzMnvlDiv/4m8YJvY6k8oc57SkMKbvpUF5s7TrCnb5L4GVvKelVAdTYHKw++TuNOnTtUdp9gXzOTohWWuAa0IiK2I1WNafR950KXpTnClLKk8mmdOLftqauoblmLPDRvYf4oRbOWjXEEdytlETuau0yt8mRhVz5/TKKuZT6SSBY+wAD+8OB8nqeClGKardtxA9b9ct0IxnwH9iZtsk1mZkToEQRowMe6AAyjYkxxgZrb8HY0Z67i/BwQD5KfncraKOwsBLZ8sk24Cf6vETsqrbo5HY9la7BbWfPoU+2b/5tR4m7UXzZa3a/5WfpNw8++RL9KBkQ9DBM6H23JHOxHHb6bmKNENnjTFYmCE8DAOtfiLF6gACqg4LP+RrZ5+X4oWO9AZnlmAErxFDk6siTRyprtHzohLxe2id4Yp23TdNqcfUnGQKHzX5cQ5bBa6EPwHgrcOweSuk+1pfiEfSryfdim+GFJUpXv4AKuDHRyhRuQ9aD6loTKjjtgHAPKZqHV9his3YiDLZiIk0jjv/TMuOVrm8scrC/IyWkdVxEsqeRhAN0RTaTjOZU3UVeBLoYx7celZ2Uw2aEIUklRhV3v7W3634Ocdn9k4pMPunp+AnC5/RUNpM8bQdKhKLNiRSCM3hPNKhPOBhn/LvGV34JCz6Ph+hAPdpKUEaYSfvtmCK72JcA6ClAAAAA='
           }
+          ctaLink={'#'}
+          ctaText={'Enticing CTA'}
           imageOnRight={true}
         />
 
@@ -105,18 +133,28 @@ const ClickThroughLanding = () => {
             'data:image/webp;base64,UklGRm4EAABXRUJQVlA4WAoAAAAgAAAAcwEAuQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDgggAIAABAeAJ0BKnQBugA+7XCxVammJCMh8PnpMB2JaW7fcRijyP9TbgA7Yz/qPddgAcB7crY30XSoEpPHUxwasRVMDshxZPWeX9VeQp/xHtVjJ9jfFGS7DvGsOH3yeI3Koz7Q1H+KNzno9Z79E5O4687QSttFJq6IqbNiBzMnvlDiv/4m8YJvY6k8oc57SkMKbvpUF5s7TrCnb5L4GVvKelVAdTYHKw++TuNOnTtUdp9gXzOTohWWuAa0IiK2I1WNafR950KXpTnClLKk8mmdOLftqauoblmLPDRvYf4oRbOWjXEEdytlETuau0yt8mRhVz5/TKKuZT6SSBY+wAD+8OB8nqeClGKardtxA9b9ct0IxnwH9iZtsk1mZkToEQRowMe6AAyjYkxxgZrb8HY0Z67i/BwQD5KfncraKOwsBLZ8sk24Cf6vETsqrbo5HY9la7BbWfPoU+2b/5tR4m7UXzZa3a/5WfpNw8++RL9KBkQ9DBM6H23JHOxHHb6bmKNENnjTFYmCE8DAOtfiLF6gACqg4LP+RrZ5+X4oWO9AZnlmAErxFDk6siTRyprtHzohLxe2id4Yp23TdNqcfUnGQKHzX5cQ5bBa6EPwHgrcOweSuk+1pfiEfSryfdim+GFJUpXv4AKuDHRyhRuQ9aD6loTKjjtgHAPKZqHV9his3YiDLZiIk0jjv/TMuOVrm8scrC/IyWkdVxEsqeRhAN0RTaTjOZU3UVeBLoYx7celZ2Uw2aEIUklRhV3v7W3634Ocdn9k4pMPunp+AnC5/RUNpM8bQdKhKLNiRSCM3hPNKhPOBhn/LvGV34JCz6Ph+hAPdpKUEaYSfvtmCK72JcA6ClAAAAA='
           }
         />
+      </div>
 
-        <TextCtaImage
-          text={'Get Dream Outcome X.'}
-          imgSrc={'/images/landing-demo-2.webp'}
-          imgAlt={'Woman using a laptop, working on her next startup idea'}
-          imgHeight={250}
-          imgWidth={500}
-          blurDataURL={
-            'data:image/webp;base64,UklGRm4EAABXRUJQVlA4WAoAAAAgAAAAcwEAuQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDgggAIAABAeAJ0BKnQBugA+7XCxVammJCMh8PnpMB2JaW7fcRijyP9TbgA7Yz/qPddgAcB7crY30XSoEpPHUxwasRVMDshxZPWeX9VeQp/xHtVjJ9jfFGS7DvGsOH3yeI3Koz7Q1H+KNzno9Z79E5O4687QSttFJq6IqbNiBzMnvlDiv/4m8YJvY6k8oc57SkMKbvpUF5s7TrCnb5L4GVvKelVAdTYHKw++TuNOnTtUdp9gXzOTohWWuAa0IiK2I1WNafR950KXpTnClLKk8mmdOLftqauoblmLPDRvYf4oRbOWjXEEdytlETuau0yt8mRhVz5/TKKuZT6SSBY+wAD+8OB8nqeClGKardtxA9b9ct0IxnwH9iZtsk1mZkToEQRowMe6AAyjYkxxgZrb8HY0Z67i/BwQD5KfncraKOwsBLZ8sk24Cf6vETsqrbo5HY9la7BbWfPoU+2b/5tR4m7UXzZa3a/5WfpNw8++RL9KBkQ9DBM6H23JHOxHHb6bmKNENnjTFYmCE8DAOtfiLF6gACqg4LP+RrZ5+X4oWO9AZnlmAErxFDk6siTRyprtHzohLxe2id4Yp23TdNqcfUnGQKHzX5cQ5bBa6EPwHgrcOweSuk+1pfiEfSryfdim+GFJUpXv4AKuDHRyhRuQ9aD6loTKjjtgHAPKZqHV9his3YiDLZiIk0jjv/TMuOVrm8scrC/IyWkdVxEsqeRhAN0RTaTjOZU3UVeBLoYx7celZ2Uw2aEIUklRhV3v7W3634Ocdn9k4pMPunp+AnC5/RUNpM8bQdKhKLNiRSCM3hPNKhPOBhn/LvGV34JCz6Ph+hAPdpKUEaYSfvtmCK72JcA6ClAAAAA='
-          }
-          imageOnRight={true}
-        />
+      {/* TODO: spacer, refactor */}
+      <div className={'py-6'}></div>
+
+      <div className={'flex flex-col items-start gap-3'}>
+        <p>
+          Here&apos;s what&apos;s at stake: limited availability offer,
+          opportunity cost of waiting, some risk of not using this CTA.
+        </p>
+        <CtaLink href={'#'} type={'secondary'}>
+          Enticing CTA
+        </CtaLink>
+      </div>
+
+      {/* TODO: spacer, refactor */}
+      <div className={'py-12'}></div>
+
+      {/* Testimonials */}
+      <div className={'flex flex-col gap-5'}>
+        <h2 className={'text-center'}>What our users are saying</h2>
+        <TestimonialGrid testimonials={testimonials} />
       </div>
     </div>
   );
