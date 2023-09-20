@@ -9,7 +9,7 @@ const testimonials: Testimonial[] = [
     imageSrc: '/images/testimonial-1.webp',
     name: 'Alice',
     testimonial:
-      'I finally launched my own product thanks to this app. I finally launched my own product thanks to this app.I finally launched my own product thanks to this app.I finally launched my own product thanks to this app.',
+      'I finally launched my own product thanks to this app. It solved all my problems in this space. Support was top notch. Will definitely use again for my next project!',
   },
   {
     imageSrc: '/images/testimonial-2.webp',
@@ -153,9 +153,12 @@ const ClickThroughLanding = () => {
       <div className={'py-12'}></div>
 
       {/* Testimonials */}
-      <div className={'flex flex-col gap-5'}>
+      <div className={'flex flex-col gap-6'}>
         <h2 className={'text-center'}>What our users are saying</h2>
         <TestimonialGrid testimonials={testimonials} />
+        <CtaLink classNames={'m-auto'} href={'#'}>
+          Enticing CTA
+        </CtaLink>
       </div>
     </div>
   );
