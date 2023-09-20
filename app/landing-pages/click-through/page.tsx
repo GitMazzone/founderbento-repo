@@ -6,29 +6,30 @@ import { Megaphone } from '@phosphor-icons/react';
 
 const testimonials: Testimonial[] = [
   {
-    imageSrc: '/images/testimonial-1.png',
+    imageSrc: '/images/testimonial-1.webp',
     name: 'Alice',
-    testimonial: 'This product is amazing!',
+    testimonial:
+      'I finally launched my own product thanks to this app. I finally launched my own product thanks to this app.I finally launched my own product thanks to this app.I finally launched my own product thanks to this app.',
   },
   {
-    imageSrc: '/images/testimonial-1.png',
-    name: 'Alice',
-    testimonial: 'This product is amazing!',
+    imageSrc: '/images/testimonial-2.webp',
+    name: 'Kirsten',
+    testimonial: 'Helped me bring my idea to life!',
   },
   {
-    imageSrc: '/images/testimonial-1.png',
-    name: 'Alice',
-    testimonial: 'This product is amazing!',
+    imageSrc: '/images/testimonial-3.webp',
+    name: 'Xander',
+    testimonial: 'Could not ask for better support.',
   },
   {
-    imageSrc: '/images/testimonial-1.png',
-    name: 'Alice',
-    testimonial: 'This product is amazing!',
+    imageSrc: '/images/testimonial-4.webp',
+    name: 'Nick',
+    testimonial: 'Never going back to Competitor. Truly a game changer.',
   },
   {
-    imageSrc: '/images/testimonial-1.png',
-    name: 'Alice',
-    testimonial: 'This product is amazing!',
+    imageSrc: '/images/testimonial-5.webp',
+    name: 'Ivy',
+    testimonial: 'This solved my pain point in 3 days!',
   },
 ];
 

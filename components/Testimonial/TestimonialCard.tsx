@@ -16,18 +16,18 @@ export const TestimonialCard: React.FunctionComponent<TestimonialCardProps> = ({
   testimonial,
 }) => {
   return (
-    <Card classNames='flex flex-col items-start w-full'>
-      <div className='flex items-center gap-2'>
+    <Card classNames={'flex flex-col items-start break-inside-avoid'}>
+      <div className={'flex items-center gap-2'}>
         <Image
-          className='rounded-full'
+          className={'rounded-full'}
           height={100}
           width={100}
           src={imageSrc}
           alt={`${name}'s avatar picture`}
         />
-        <span className='font-bold'>{name}</span>
+        <span className={'font-bold'}>{name}</span>
       </div>
-      <div className='flex gap-1 mt-2'>
+      <div className={'flex gap-1'}>
         {Array.from({ length: 5 }).map((_, i) => (
           <Star
             key={i}
@@ -37,7 +37,7 @@ export const TestimonialCard: React.FunctionComponent<TestimonialCardProps> = ({
           />
         ))}
       </div>
-      <p className='mt-2'>{testimonial}</p>
+      <p className={'text-center'}>{testimonial}</p>
     </Card>
   );
 };
