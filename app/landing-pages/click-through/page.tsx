@@ -1,8 +1,15 @@
 'use client';
 
-import { Callout, CtaLink, TestimonialGrid, TextCtaImage } from '@/components';
+import {
+  Callout,
+  CtaLink,
+  Newsletter,
+  TestimonialGrid,
+  TextCtaImage,
+} from '@/components';
 import type { Testimonial } from '@/components';
 import { Megaphone } from '@phosphor-icons/react';
+import Link from 'next/link';
 
 const testimonials: Testimonial[] = [
   {
@@ -161,6 +168,54 @@ const ClickThroughLanding = () => {
         <CtaLink classNames={'m-auto'} href={'#'}>
           Enticing CTA
         </CtaLink>
+      </div>
+
+      {/* TODO: spacer, refactor */}
+      <div className={'py-12'}></div>
+
+      <Newsletter
+        heading={'Weekly newsletter about Your Service'}
+        text={
+          'A sentence or two about how much value a 5-min read once a week can provide. Also a good chance to appeal to those on the fence.'
+        }
+        ctaText={'Sign up'}
+        inputPlaceholder={'your@email.com'}
+      />
+
+      {/* TODO: spacer, refactor */}
+      <div className={'py-12'}></div>
+
+      <div className={'flex flex-col gap-3'}>
+        <h4>An SEO-optimized keyword paragraph or two</h4>
+        <Callout>
+          <p>
+            It&apos;s a good idea to put internal links here as well. More
+            entertaining ipsum courtesy of{' '}
+            {/* TODO: replace with TextLink component */}
+            <Link
+              className={'text-orange-500'}
+              href={'https://hipsum.co/'}
+              target={'_blank'}
+            >
+              Hipster Ipsum
+            </Link>
+          </p>
+        </Callout>
+        <p>
+          Man bun drinking vinegar sus gluten-free pork belly. Pop-up hexagon
+          iceland sartorial health goth, 90&apos;s gentrify you probably
+          haven&apos;t heard of them succulents narwhal. Marfa JOMO green juice
+          salvia. Biodiesel pop-up church-key, unicorn umami sus brunch tofu
+          semiotics asymmetrical.
+        </p>
+        <p>
+          8-bit yr salvia beard meggings. Iceland marxism tattooed jean shorts
+          gentrify ugh distillery yes plz JOMO art party authentic franzen. Tofu
+          vegan YOLO cred ennui palo santo pinterest keffiyeh migas sus banh mi
+          everyday carry. Swag pork belly bicycle rights chia viral vegan
+          grailed blackbird spyplane flexitarian next level farm-to-table cred
+          flannel trust fund.
+        </p>
       </div>
     </div>
   );
