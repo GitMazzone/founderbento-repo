@@ -44,7 +44,11 @@ export const TextCtaImage: FunctionComponent<TextCtaImageProps> = ({
       </div>
       <div className='flex flex-col gap-5 items-start w-full md:w-1/2'>
         <p>{text}</p>
-        {ctaLink && <CtaLink href='#'>{ctaText}</CtaLink>}
+        {ctaLink && (
+          <CtaLink href='#' type={'secondary'}>
+            {ctaText}
+          </CtaLink>
+        )}
       </div>
     </div>
   );
