@@ -11,8 +11,8 @@ module.exports = function (plop: NodePlopAPI) {
     prompts: [
       {
         type: 'list',
-        name: 'isNewComponent',
-        message: 'Is it a new component?',
+        name: 'hasParentComponent',
+        message: 'Create component under an existing component?',
         choices: ['Yes', 'No'],
       },
       {
@@ -24,17 +24,22 @@ module.exports = function (plop: NodePlopAPI) {
         type: 'list',
         name: 'componentParent',
         message: 'Select the parent component:',
-        choices: () => fs.readdirSync(path.resolve(__dirname, './components')),
-        when: (answers) => answers.isNewComponent === 'No',
+        choices: () => {
+          const componentsDir = path.resolve(__dirname, './components');
+          return fs.readdirSync(componentsDir).filter((item) => {
+            return fs.statSync(path.join(componentsDir, item)).isDirectory();
+          });
+        },
+        when: (answers) => answers.hasParentComponent === 'Yes',
       },
     ],
     actions: (answers) => {
       const actions = [];
 
-      const isStandalone = answers?.isNewComponent === 'Yes';
+      const isStandalone = answers?.hasParentComponent === 'No';
       const componentPath = isStandalone
         ? `./components/{{componentName}}`
-        : `./components/{{componentParent}}/{{componentName}}`;
+        : `./components/{{componentParent}}`;
 
       // Add new component file
       actions.push({
@@ -56,6 +61,7 @@ module.exports = function (plop: NodePlopAPI) {
           type: 'append',
           path: './components/index.ts',
           template: `export * from './{{componentName}}';\n`,
+          separator: '',
         });
       } else {
         // Append to parent component's barrel file
@@ -63,6 +69,7 @@ module.exports = function (plop: NodePlopAPI) {
           type: 'append',
           path: `./components/{{componentParent}}/index.ts`,
           template: `export * from './{{componentName}}';\n`,
+          separator: '',
         });
       }
 
