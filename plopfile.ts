@@ -31,33 +31,40 @@ module.exports = function (plop: NodePlopAPI) {
     actions: (answers) => {
       const actions = [];
 
-      const componentPath =
-        answers?.isNewComponent === 'Yes'
-          ? `./components/{{componentName}}`
-          : `./components/{{componentParent}}/{{componentName}}`;
+      const isStandalone = answers?.isNewComponent === 'Yes';
+      const componentPath = isStandalone
+        ? `./components/{{componentName}}`
+        : `./components/{{componentParent}}/{{componentName}}`;
 
-      // Add new component to standalone or existing dir
+      // Add new component file
       actions.push({
         type: 'add',
         path: `${componentPath}/{{componentName}}.tsx`,
         templateFile: './templates/component.hbs',
       });
 
-      // Add barrel file for new standalone component
-      if (answers?.isNewComponent === 'Yes') {
+      // Add new index.ts for standalone component
+      if (isStandalone) {
         actions.push({
           type: 'add',
           path: `${componentPath}/index.ts`,
           templateFile: './templates/component-index.hbs',
         });
-      }
 
-      // Add to top-level components barrel file
-      actions.push({
-        type: 'append',
-        path: './components/index.ts',
-        template: `export { {{componentName}} } from './{{componentName}}/{{componentName}}';\n`,
-      });
+        // Append to top-level components barrel file
+        actions.push({
+          type: 'append',
+          path: './components/index.ts',
+          template: `export * from './{{componentName}}';\n`,
+        });
+      } else {
+        // Append to parent component's barrel file
+        actions.push({
+          type: 'append',
+          path: `./components/{{componentParent}}/index.ts`,
+          template: `export * from './{{componentName}}';\n`,
+        });
+      }
 
       return actions;
     },
