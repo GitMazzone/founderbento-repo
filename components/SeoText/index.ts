@@ -1,1 +1,0 @@
-export { SeoText } from './SeoText';
