@@ -1,9 +1,9 @@
 import { NodePlopAPI } from 'plop';
-import fs from 'fs';
-import path from 'path';
+import * as fs from 'fs';
+import * as path from 'path';
 
 // Learn more about plopjs: https://plopjs.com/documentation/
-export default function (plop: NodePlopAPI) {
+module.exports = function (plop: NodePlopAPI) {
   // create your generators here
   plop.setGenerator('component', {
     description: 'component boilerplate',
@@ -62,4 +62,4 @@ export default function (plop: NodePlopAPI) {
       return actions;
     },
   });
-}
+};

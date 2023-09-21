@@ -5,7 +5,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint '**/*.{ts,tsx}' --cache --fix && prettier --write './{app,components,config,styles}/**/*.{ts,tsx,js,jsx,json,css}'",
-    "plop": "plop"
+    "plop": "tsc plopfile.ts && plop"
   },
   "husky": {
     "hooks": {
