@@ -173,6 +173,11 @@ const ClickThroughLanding = () => {
       {/* TODO: spacer, refactor */}
       <div className={'py-12'}></div>
 
+      <div>{/* TODO: FAQ component */}</div>
+
+      {/* TODO: spacer, refactor */}
+      <div className={'py-12'}></div>
+
       <Newsletter
         heading={'Weekly newsletter about Your Service'}
         text={
@@ -216,6 +221,10 @@ const ClickThroughLanding = () => {
           grailed blackbird spyplane flexitarian next level farm-to-table cred
           flannel trust fund.
         </p>
+        {/* TODO: replace with TextLink component */}
+        <Link className={'text-orange-500'} href={'#'} target={'_blank'}>
+          Read more on our blog
+        </Link>
       </div>
     </div>
   );
