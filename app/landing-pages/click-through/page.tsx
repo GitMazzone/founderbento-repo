@@ -4,6 +4,7 @@ import {
   CtaLink,
   Hero,
   Newsletter,
+  Pricing,
   SeoText,
   Spacer,
   TestimonialGrid,
@@ -120,7 +121,7 @@ const ClickThroughLanding = () => {
 
       <Spacer type={'section'} />
 
-      <div className={'flex flex-col gap-6'}>
+      <div className={'flex flex-col gap-8'}>
         <h2 className={'text-center'}>What our users are saying</h2>
         <TestimonialGrid testimonials={testimonials} />
         <CtaLink classNames={'m-auto'} href={'#'}>
@@ -131,6 +132,9 @@ const ClickThroughLanding = () => {
       <Spacer type={'section'} />
 
       {/* TODO: Pricing component & Spacer */}
+      <Pricing />
+
+      <Spacer type={'section'} />
 
       <Newsletter
         heading={'Weekly newsletter about Your Service'}
