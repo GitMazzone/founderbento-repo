@@ -68,7 +68,7 @@ module.exports = function (plop: NodePlopAPI) {
         actions.push({
           type: 'append',
           path: `./components/{{componentParent}}/index.ts`,
-          template: `export * from './{{componentName}}';\n`,
+          template: `export { {{componentName}} } from './{{componentName}}';\n`,
           separator: '',
         });
       }
