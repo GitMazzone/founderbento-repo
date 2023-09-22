@@ -43,7 +43,7 @@ const testimonials: Testimonial[] = [
 const ClickThroughLanding = () => {
   return (
     // TODO: spacing component for between and within sections
-    <div className={'pageContainer'}>
+    <div className={'pageContainer max-w-6xl mx-auto'}>
       <Hero />
 
       {/* TODO: spacer, refactor */}
