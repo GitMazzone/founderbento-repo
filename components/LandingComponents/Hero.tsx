@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react';
 import { CtaLink } from '../Buttons';
 import { BenefitsCallout } from './BenefitsCallout';
+import { Spacer } from '../Spacer';
 
 const benefits = ['Benefit A', 'Good Thing B', 'Bonus C'];
 
@@ -12,8 +13,7 @@ export const Hero: FunctionComponent = () => {
       {/* TODO: use theme colors */}
       <CtaLink href={'#'}>Enticing CTA</CtaLink>
 
-      {/* TODO: replace with spacer */}
-      <div className={'py-2'}></div>
+      <Spacer type={'component'} />
 
       <BenefitsCallout benefits={benefits} />
     </div>
