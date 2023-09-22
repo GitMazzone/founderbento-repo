@@ -10,7 +10,7 @@
 git clone https://github.com/GitMazzone/founder-ninja.git [MY-APP-NAME]
 ```
 
-2. Go to project dir
+2. Go to your project's dir
 
 ```bash
 cd [MY-APP-NAME]
