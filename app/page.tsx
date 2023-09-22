@@ -15,7 +15,7 @@ import Link from 'next/link';
 const Overview = () => {
   return (
     <div className={'flex flex-col gap-5'}>
-      <h1>Overview</h1>
+      <h1>Welcome!</h1>
 
       <Callout>
         <p>Implement what you need for your MVP. Delete the rest.</p>

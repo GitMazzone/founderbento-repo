@@ -38,4 +38,6 @@ Go to [http://localhost:3000](http://localhost:3000) to see an overview of your 
 
 If you need help after the tutorial, dm me on [Twitter](https://twitter.com/gitmazzone) or email me @ mazzone.dev@gmail.com
 
+🐞 If you find bugs, please open an issue on the repo.
+
 From one solopreneur to another -- thank you for your support. ♡
