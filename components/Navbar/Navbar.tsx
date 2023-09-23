@@ -3,28 +3,11 @@
 import { Menu } from '@headlessui/react';
 import { List, Rocket, X } from '@phosphor-icons/react';
 import Link from 'next/link';
-import { FunctionComponent, useEffect, useState } from 'react';
-import {
-  User,
-  createClientComponentClient,
-} from '@supabase/auth-helpers-nextjs';
+import { FunctionComponent } from 'react';
+import { useAuthContext } from '../AuthProvider';
 
 export const Navbar: FunctionComponent = () => {
-  const supabase = createClientComponentClient();
-
-  const [user, setUser] = useState<User>();
-  useEffect(() => {
-    const getUser = async () => {
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
-      if (user) {
-        setUser(user);
-      }
-    };
-
-    getUser();
-  }, [supabase, setUser]);
+  const { user } = useAuthContext();
 
   return (
     <nav className='bg-white border-b-2 border-black p-4 w-full'>

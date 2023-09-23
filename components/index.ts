@@ -1,3 +1,4 @@
+export * from './AuthProvider';
 export * from './Buttons';
 export * from './Callout';
 export * from './Cards';
