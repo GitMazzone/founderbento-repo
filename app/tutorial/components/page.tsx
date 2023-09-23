@@ -1,7 +1,30 @@
+'use client';
+
+import { Card } from '@/components';
+import { ArrowRight, Ruler } from '@phosphor-icons/react';
+import Link from 'next/link';
+
 const Components = () => {
   return (
     <>
       <h1>Components</h1>
+
+      <div>
+        <Link href={'/tutorial/design-language'}>
+          <Card
+            classNames={
+              'bg-slate-100 px-5 justify-start hover:bg-slate-200 active:bg-slate-100'
+            }
+          >
+            <span className={'bg-orange-300 p-2 rounded-full'}>
+              <Ruler className={'h-6 w-6'} />
+            </span>
+            Design language
+            <ArrowRight className={'h-6 w-6 ml-auto hidden md:inline-block'} />
+          </Card>
+        </Link>
+        <p className={'text-gray-500 text-center mt-2'}>Quick overview of</p>
+      </div>
 
       <p>
         Hero Section: Includes headline, subheadline, and main CTA.
