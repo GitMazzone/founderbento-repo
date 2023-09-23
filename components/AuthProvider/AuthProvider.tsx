@@ -17,9 +17,13 @@ const supabase = createClientComponentClient();
 
 interface AuthContextProps {
   user: User | null;
+  loading: boolean;
 }
 
-const AuthContext = createContext<AuthContextProps>({ user: null });
+const AuthContext = createContext<AuthContextProps>({
+  user: null,
+  loading: true,
+});
 
 /**
  * Custom hook to consume the AuthContext.
@@ -60,11 +64,13 @@ export const AuthProvider: FunctionComponent<AuthProviderProps> = ({
   children,
 }) => {
   const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const { data: authListener } = supabase.auth.onAuthStateChange(
       (_, session) => {
         setUser(session?.user ?? null);
+        setLoading(false);
       },
     );
 
@@ -74,6 +80,8 @@ export const AuthProvider: FunctionComponent<AuthProviderProps> = ({
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user }}>{children}</AuthContext.Provider>
+    <AuthContext.Provider value={{ user, loading }}>
+      {children}
+    </AuthContext.Provider>
   );
 };

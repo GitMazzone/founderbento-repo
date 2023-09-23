@@ -7,7 +7,7 @@ import { FunctionComponent } from 'react';
 import { useAuthContext } from '../AuthProvider';
 
 export const Navbar: FunctionComponent = () => {
-  const { user } = useAuthContext();
+  const { user, loading } = useAuthContext();
 
   return (
     <nav className='bg-white border-b-2 border-black p-4 w-full'>
@@ -17,15 +17,14 @@ export const Navbar: FunctionComponent = () => {
         {/* Links for medium screens and up */}
         <div className={'hidden md:flex space-x-4'}>
           <Link href={'/tutorial'}>Tutorial</Link>
-          <div>
-            {user ? (
+          {!loading &&
+            (user ? (
               <form action={'/auth/sign-out'} method={'post'}>
                 <button>Logout</button>
               </form>
             ) : (
               <Link href='/login'>Login</Link>
-            )}
-          </div>
+            ))}
         </div>
 
         {/* Hamburger menu and optional Sign Up CTA for mobile */}
