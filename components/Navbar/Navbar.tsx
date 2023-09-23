@@ -16,7 +16,7 @@ export const Navbar: FunctionComponent = () => {
 
         {/* Links for medium screens and up */}
         <div className={'hidden md:flex space-x-4'}>
-          <Link href={'/tutorial'}>Tutorial</Link>
+          <Link href={'/'}>Home</Link>
           {!loading &&
             (user ? (
               <form action={'/auth/sign-out'} method={'post'}>
