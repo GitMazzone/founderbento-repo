@@ -8,11 +8,9 @@ import { getBaseUrl } from './routePaths';
 
 type AppConfig = {
   displayName: string; // Your product's name as you'd spell it in an ad
-  domainName: string;
   authRedirectUrl: string; // Where to send users after successful login
 };
 export const appConfig: AppConfig = {
-  displayName: 'FounderNinja',
-  domainName: 'founder.ninja',
+  displayName: 'FounderBento',
   authRedirectUrl: getBaseUrl(),
 };

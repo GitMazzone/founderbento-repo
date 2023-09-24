@@ -10,4 +10,4 @@ export const isDev = () => process.env.VERCEL_ENV === 'preview';
 export const isProd = () => process.env.VERCEL_ENV === 'production';
 
 export const getBaseUrl = () =>
-  isProd() ? 'founder.ninja' : 'dev.founder.ninja';
+  isProd() ? 'https://founderbento.com' : 'https://dev.founderbento.com';
