@@ -1,4 +1,4 @@
-# FounderNinja
+# FounderBento
 
 > Please watch & star this repo so you're notified about updates!
 
@@ -7,7 +7,7 @@
 1. Clone
 
 ```bash
-git clone https://github.com/GitMazzone/founder-ninja.git [MY-APP-NAME]
+git clone https://github.com/GitMazzone/founderbento-repo.git [MY-APP-NAME]
 ```
 
 2. Go to your project's dir
@@ -34,7 +34,7 @@ git remote remove origin
 npm run dev
 ```
 
-Go to [http://localhost:3000](http://localhost:3000) to see an overview of your founder toolbox and to start the tutorial.
+Go to [http://localhost:3000](http://localhost:3000) to see an overview of your founder bento and to start the tutorial.
 
 If you need help after the tutorial, dm me on [Twitter](https://twitter.com/gitmazzone) or email me @ mazzone.dev@gmail.com
 

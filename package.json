@@ -1,4 +1,5 @@
 {
+  "name": "founderbento-repo",
   "private": true,
   "scripts": {
     "dev": "next dev",
