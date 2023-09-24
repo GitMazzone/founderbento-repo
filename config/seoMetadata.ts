@@ -3,8 +3,9 @@ import { getBaseUrl } from './routePaths';
 import { appConfig } from './config';
 
 const title = `Up to 50 characters | ${appConfig.displayName}`;
-const description = '60 to 180 characters long';
+const description = '100 to 180 characters long';
 
+// Use https://www.heymeta.com/ to validate what you have here. Requires a deployed URL.
 export const baseMetadata: Metadata = {
   metadataBase: new URL(getBaseUrl()),
   title,
@@ -36,20 +37,6 @@ export const baseMetadata: Metadata = {
     description,
     url: new URL(getBaseUrl()),
     siteName: appConfig.displayName,
-    images: [
-      {
-        url: 'seo/ogStandardPreview.webp',
-        width: 800,
-        height: 600,
-        alt: 'A description of your preview image.',
-      },
-      {
-        url: 'seo/ogLargePreview.webp',
-        width: 1800,
-        height: 1600,
-        alt: 'A description of your preview image.',
-      },
-    ],
     // Locale these tags are marked up in. Format: language_TERRITORY.
     locale: 'en_US',
     // Default is 'website'. Other values are 'article', 'book', etc.
