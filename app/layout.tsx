@@ -2,6 +2,7 @@ import { Merriweather } from 'next/font/google';
 import '../styles/globals.css';
 import { AuthProvider, Navbar } from '@/components';
 import { ReactNode } from 'react';
+import cn from 'classnames';
 
 // TODO: move font to fonts.ts, pick global default & move MW to heading only
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts
@@ -19,10 +20,10 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang='en' className={merriweather.className}>
+    <html lang='en' className={cn(merriweather.className, 'light')}>
       <AuthProvider>
         <body>
-          <main className='min-h-screen flex flex-col items-center'>
+          <main className='min-h-screen flex flex-col items-center bg-light-primary dark:bg-dark-primary transition-colors duration-300'>
             <Navbar />
             <div className={'pageContainer'}>{children}</div>
           </main>

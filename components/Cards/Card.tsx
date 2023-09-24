@@ -15,7 +15,7 @@ export const Card: FunctionComponent<CardProps> = ({
   return (
     <div
       className={cn(
-        'flex gap-3 items-center justify-center p-4 bg-white rounded-lg shadow-md',
+        'flex gap-3 items-center justify-center p-4 rounded-lg shadow-md',
         classNames,
       )}
     >

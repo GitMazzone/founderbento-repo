@@ -6,3 +6,4 @@ export * from './LandingComponents';
 export * from './Navbar';
 export * from './RequireAuth';
 export * from './Spacer';
+export * from './ThemeToggle';
