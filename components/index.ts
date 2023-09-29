@@ -2,6 +2,7 @@ export * from './AuthProvider';
 export * from './Buttons';
 export * from './Callout';
 export * from './Cards';
+export * from './Footer';
 export * from './LandingComponents';
 export * from './Navbar';
 export * from './RequireAuth';

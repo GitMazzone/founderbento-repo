@@ -10,7 +10,7 @@ export const Navbar: FunctionComponent = () => {
   const { user, loading } = useAuthContext();
 
   return (
-    <nav className='bg-white border-b-2 border-black p-4 w-full'>
+    <nav className='sticky top-0 z-10 backdrop-blur bg-white/75 border-b border-black p-4 w-full'>
       <div className='flex items-center justify-between'>
         <Rocket color='#000' size={38} className='rotate-45' />
 
