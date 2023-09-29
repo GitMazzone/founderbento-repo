@@ -12,8 +12,8 @@ import {
 
 export const Footer: FunctionComponent = () => {
   return (
-    <footer className={'bg-neutral-800 text-white py-12 w-[100vw]'}>
-      <div className={'container mx-auto px-4'}>
+    <footer className={'bg-neutral-800 text-white py-24 w-[100vw] xPadding'}>
+      <div className={'mx-auto px-4'}>
         <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'}>
           <div className={'text-center md:text-left'}>
             <div
@@ -27,7 +27,11 @@ export const Footer: FunctionComponent = () => {
             </p>
           </div>
 
-          <div className={'text-center md:text-left'}>
+          <div
+            className={
+              'text-center md:text-left lg:flex lg:flex-col lg:justify-start lg:items-center'
+            }
+          >
             <h5>Links</h5>
             <ul>
               <li>
@@ -48,12 +52,16 @@ export const Footer: FunctionComponent = () => {
             </ul>
           </div>
 
-          <div className={'text-center md:text-left'}>
+          <div
+            className={
+              'text-center md:text-left lg:flex lg:flex-col lg:justify-start lg:items-center'
+            }
+          >
             <h5>Legal</h5>
             <ul>
               <li>
                 <Link className={'text-sm hover:underline'} href='#'>
-                  Terms of
+                  Terms of Service
                 </Link>
               </li>
               <li>
@@ -64,7 +72,11 @@ export const Footer: FunctionComponent = () => {
             </ul>
           </div>
 
-          <div className={'text-center md:text-left'}>
+          <div
+            className={
+              'text-center md:text-left lg:flex lg:flex-col lg:justify-start lg:items-end lg:text-right'
+            }
+          >
             <h5>Join Our Community</h5>
             <div className='flex justify-center md:justify-start gap-2 mt-2'>
               <Link href={'#'}>

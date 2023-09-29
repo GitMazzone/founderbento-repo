@@ -4,10 +4,10 @@
 
 @layer base {
   h1 {
-    @apply text-5xl leading-[1.1] sm:text-6xl md:text-7xl lg:leading-[1.15] font-bold tracking-wide;
+    @apply text-5xl leading-[1.1] sm:text-6xl lg:leading-[1.15] font-bold tracking-wide;
   }
   h2 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-semibold tracking-wide;
+    @apply text-4xl sm:text-5xl font-semibold tracking-wide;
   }
   h3 {
     @apply text-3xl sm:text-4xl font-medium tracking-normal;
@@ -29,6 +29,10 @@
 
 @layer components {
   .pageContainer {
-    @apply flex flex-col min-h-screen pt-3 px-3 md:pt-10 md:px-10;
+    @apply box-border flex flex-col min-h-screen w-auto pt-3 md:pt-10 xPadding;
+  }
+
+  .xPadding {
+    @apply px-3 md:px-10 lg:px-20;
   }
 }
