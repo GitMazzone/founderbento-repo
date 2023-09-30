@@ -52,7 +52,7 @@ export const Pricing: FunctionComponent = () => (
     >
       {pricingPlans.map(({ title, price, benefits, popular }) => (
         <div
-          className={`relative flex flex-col gap-6 p-6 shadow-md rounded-lg justify-between border last:col-span-full ${
+          className={`relative flex flex-col gap-6 p-6 shadow-md rounded-lg justify-between border last:col-span-full lg:last:col-auto ${
             popular
               ? 'shadow shadow-orange-500 md:flex-grow'
               : 'border-gray-300'
