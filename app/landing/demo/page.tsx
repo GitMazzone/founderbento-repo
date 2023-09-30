@@ -3,7 +3,6 @@
 import {
   BenefitsCallout,
   CtaLink,
-  Footer,
   Hero,
   Newsletter,
   Pricing,
@@ -162,7 +161,6 @@ const ClickThroughLanding = () => {
 
         <Spacer type={'section'} />
       </div>
-      <Footer />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import { Merriweather } from 'next/font/google';
 import '../styles/globals.css';
-import { AuthProvider, Navbar } from '@/components';
+import { AuthProvider, Footer, Navbar } from '@/components';
 import { ReactNode } from 'react';
 import cn from 'classnames';
 import { baseMetadata } from '@/config';
@@ -28,6 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <main className='min-h-screen flex flex-col items-center bg-light-primary dark:bg-dark-primary transition-colors duration-300'>
             <Navbar />
             {children}
+            <Footer />
           </main>
         </body>
       </AuthProvider>
