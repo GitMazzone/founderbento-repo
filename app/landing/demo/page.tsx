@@ -1,6 +1,7 @@
 'use client';
 
 import {
+  BenefitsCallout,
   CtaLink,
   Footer,
   Hero,
@@ -42,11 +43,17 @@ const testimonials: Testimonial[] = [
   },
 ];
 
+const benefits = ['Benefit A', 'Good Thing B', 'Bonus C'];
+
 const ClickThroughLanding = () => {
   return (
     <>
       <div className={'pageContainer max-w-6xl mx-auto'}>
         <Hero />
+
+        <Spacer type={'section'} />
+
+        <BenefitsCallout benefits={benefits} />
 
         <Spacer type={'section'} />
 

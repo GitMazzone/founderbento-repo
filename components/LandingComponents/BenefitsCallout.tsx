@@ -17,7 +17,11 @@ export const BenefitsCallout: FunctionComponent<BenefitsCalloutProps> = ({
           className={'flex items-center justify-center gap-2 w-full'}
           key={benefit}
         >
-          <Megaphone className={'bg-gray-200 rounded-md p-2 h-10 w-10'} />
+          <Megaphone
+            className={
+              'bg-gray-200 shadow-sm shadow-orange-500 rounded-md p-2 h-10 w-10'
+            }
+          />
           <p>{benefit}</p>
         </div>
       ))}
