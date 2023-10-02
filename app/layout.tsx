@@ -22,12 +22,16 @@ export const metadata = baseMetadata;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang='en' className={cn(merriweather.className, 'light')}>
+    <html lang={'en'} className={cn(merriweather.className, 'light')}>
       <AuthProvider>
         <body>
-          <main className='min-h-screen flex flex-col items-center bg-light-primary dark:bg-dark-primary transition-colors duration-300'>
+          <main
+            className={
+              'min-h-screen flex flex-col items-center bg-light-primary dark:bg-dark-primary transition-colors duration-300'
+            }
+          >
             <Navbar />
-            {children}
+            <div className={'pageContainer'}>{children}</div>
             <Footer />
           </main>
         </body>

@@ -47,7 +47,7 @@ const benefits = ['Benefit A', 'Good Thing B', 'Bonus C'];
 const ClickThroughLanding = () => {
   return (
     <>
-      <div className={'pageContainer max-w-6xl mx-auto'}>
+      <div className={'max-w-6xl mx-auto'}>
         <Hero />
 
         <Spacer type={'section'} />
