@@ -44,9 +44,9 @@ const cards: CardInfo[] = [
   {
     href: '/tutorial/stack',
     icon: <Code className={'h-6 w-6'} />,
-    title: 'Your Founder Bento',
+    title: 'Your FounderBento',
     description:
-      'Quickstart guides to launch your MVP today. Everything you need to go from idea to first paying customers: database, login, API routes, payments, customer support, SEO, analytics, and more.',
+      'Quickstart guides to launch your MVP today. Everything you need to go from idea to first paying customer: database, login, API routes, payments, customer support, SEO, analytics, and more.',
   },
   {
     href: '/tutorial/template-pages',
@@ -60,7 +60,7 @@ const cards: CardInfo[] = [
     icon: <PuzzlePiece className={'h-6 w-6'} />,
     title: 'Component library',
     description:
-      'Minimal. Focused on plug-and-play rather than generic reusability & complexity. Keep what you like, change what you need, get your MVP out today.',
+      'Focused on plug-and-play & simplicity rather than generic reusability & complexity. Keep what you like, change what you need, get your MVP out today.',
   },
   {
     href: '/tutorial/tools',

@@ -19,7 +19,9 @@ export const Navbar: FunctionComponent = () => {
   return (
     <nav className='sticky top-0 z-10 backdrop-blur bg-white/75 border-b border-black p-4 w-full'>
       <div className='flex items-center justify-between'>
-        <Rocket color='#000' size={38} className='rotate-45' />
+        <Link href={'/'} aria-label={'Go home'}>
+          <Rocket color='#000' size={38} className='rotate-45' />
+        </Link>
 
         {/* Links for medium screens and up */}
         <div className={'hidden md:flex space-x-4'}>
