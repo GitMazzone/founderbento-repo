@@ -28,8 +28,8 @@ export const MobileMenu: FunctionComponent<MobileMenuProps> = ({ links }) => {
             </Menu.Button>
             <Menu.Items
               className={`${
-                open ? 'fixed inset-0 top-24' : 'absolute right-0'
-              } h-[33vh] w-11/12 mx-auto bg-white rounded-md shadow-lg focus:outline-none flex flex-col justify-center items-center gap-5`}
+                open ? 'fixed inset-0 top-14' : 'absolute right-0'
+              } h-[33vh] w-11/12 mx-auto bg-stone-100 rounded-md shadow-lg focus:outline-none flex flex-col justify-center items-center gap-5`}
             >
               {links.map((link) => (
                 <Menu.Item key={`mobile-${link.text}`}>

@@ -1,29 +1,24 @@
 'use client';
 
-import { Rocket } from '@phosphor-icons/react';
 import Link from 'next/link';
 import { FunctionComponent } from 'react';
 import { useAuthContext } from '../AuthProvider';
 import { MobileMenu } from './MobileMenu';
 import { NavLink } from './Navbar.types';
+import { Logo } from '../Logo';
 
-const links: NavLink[] = [
-  { href: '/', text: 'Home' },
-  { href: '/', text: 'Pricing' },
-  { href: '/', text: 'Contact' },
-];
+const links: NavLink[] = [{ href: '/', text: 'How it works' }];
 
 export const Navbar: FunctionComponent = () => {
   const { user, loading } = useAuthContext();
 
   return (
-    <nav className='sticky top-0 z-10 backdrop-blur bg-white/75 border-b border-black p-4 w-full'>
+    <nav className='sticky top-0 z-10 text-stone-800 backdrop-blur bg-stone-100 bg-opacity-75 border-b border-black px-4 w-full'>
       <div className='flex items-center justify-between'>
         <Link href={'/'} aria-label={'Go home'}>
-          <Rocket color='#000' size={38} className='rotate-45' />
+          <Logo />
         </Link>
 
-        {/* Links for medium screens and up */}
         <div className={'hidden md:flex space-x-4'}>
           {links.map((link) => (
             <Link href={'/'} key={`md-${link.text}`}>

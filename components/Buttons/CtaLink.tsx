@@ -10,7 +10,6 @@ type CtaButtonProps = {
   classNames?: string;
   href: string;
   openInNewTab?: boolean;
-  type?: 'primary' | 'secondary';
 };
 
 export const CtaLink: FunctionComponent<CtaButtonProps> = ({
@@ -18,13 +17,12 @@ export const CtaLink: FunctionComponent<CtaButtonProps> = ({
   children,
   classNames,
   openInNewTab = false,
-  type = 'primary',
 }) => {
   return (
     <Link
       className={cn(
         styles.button,
-        type === 'primary' ? styles.primary : styles.secondary,
+        'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500',
         classNames,
       )}
       href={href}

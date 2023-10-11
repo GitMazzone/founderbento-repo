@@ -1,0 +1,1 @@
+export { SimpleHowItWorks } from './SimpleHowItWorks';

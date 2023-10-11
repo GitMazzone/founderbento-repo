@@ -14,10 +14,7 @@ export const Card: FunctionComponent<CardProps> = ({
 }) => {
   return (
     <div
-      className={cn(
-        'flex gap-3 items-center justify-center p-4 rounded-lg shadow-md',
-        classNames,
-      )}
+      className={cn('flex items-center justify-center rounded-md', classNames)}
     >
       {children}
     </div>

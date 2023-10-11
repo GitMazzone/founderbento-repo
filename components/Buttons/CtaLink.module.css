@@ -1,12 +1,4 @@
 .button {
-  @apply flex items-center gap-3 py-3 px-7 font-bold tracking-wide rounded-full;
-}
-
-.primary {
-  @apply bg-orange-500 text-white;
-  @apply hover:bg-orange-600 active:bg-orange-500;
-}
-
-.secondary {
-  @apply bg-transparent border-2 border-orange-500 text-black;
+  @apply flex items-center gap-3 py-3 px-7 font-bold tracking-wide rounded-md;
+  @apply hover:-translate-y-[0.1rem] duration-100;
 }
