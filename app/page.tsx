@@ -49,11 +49,11 @@ const cards: CardInfo[] = [
       'Quickstart guides to launch your MVP today. Everything you need to go from idea to first paying customer: database, login, API routes, payments, customer support, SEO, analytics, and more.',
   },
   {
-    href: '/tutorial/template-pages',
+    href: '/landing/demo',
     icon: <Layout className={'h-6 w-6'} />,
-    title: 'Landing pages',
+    title: 'Landing page template',
     description:
-      'Effective layouts that convert. Built-in guidance for great copy & graphics.',
+      'An effective layout that converts. Built-in guidance for great copy & graphics.',
   },
   {
     href: '/tutorial/components',
