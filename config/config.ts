@@ -7,7 +7,7 @@
 import { getBaseUrl } from './routePaths';
 
 type AppConfig = {
-  displayName: string; // Your product's name as you'd spell it in an ad
+  displayName: string; // Your product/startup's name
   authRedirectUrl: string; // Where to send users after successful login
 };
 export const appConfig: AppConfig = {

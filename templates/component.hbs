@@ -1,13 +1,13 @@
-import { FunctionComponent, ReactNode } from 'react';
+import { FunctionComponent } from 'react';
 
 type {{componentName}}Props = {
-  children: ReactNode;
+  someProp: string;
 };
 
-export const {{componentName}}: FunctionComponent<{{componentName}}Props> = ({ children }) => {
+export const {{componentName}}: FunctionComponent<{{componentName}}Props> = ({ someProp }) => {
   return (
     <>
-      {children}
+      {someProp}
     </>
   );
 };

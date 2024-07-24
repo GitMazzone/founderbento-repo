@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getBaseUrl } from './routePaths';
 import { appConfig } from './config';
 
-const title = `Up to 50 characters | ${appConfig.displayName}`;
+const title = `${appConfig.displayName} | Up to 50 characters`;
 const description = '100 to 180 characters long';
 
 // Use https://www.heymeta.com/ to validate what you have here. Requires a deployed URL.

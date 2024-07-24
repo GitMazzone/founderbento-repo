@@ -36,10 +36,10 @@ module.exports = function (plop: NodePlopAPI) {
     actions: (answers) => {
       const actions = [];
 
-      const isStandalone = answers?.hasParentComponent === 'No';
-      const componentPath = isStandalone
-        ? `./components/{{componentName}}`
-        : `./components/{{componentParent}}`;
+      const hasParentComponent = answers?.hasParentComponent === 'Yes';
+      const componentPath = hasParentComponent
+        ? `./components/{{componentParent}}`
+        : `./components/{{componentName}}`;
 
       // Add new component file
       actions.push({
@@ -49,7 +49,7 @@ module.exports = function (plop: NodePlopAPI) {
       });
 
       // Add new index.ts for standalone component
-      if (isStandalone) {
+      if (!hasParentComponent) {
         actions.push({
           type: 'add',
           path: `${componentPath}/index.ts`,

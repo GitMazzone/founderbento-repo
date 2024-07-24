@@ -4,40 +4,48 @@
 
 ## 💥 First dopamine hit
 
-1. Clone
+Clone
 
 ```bash
 git clone https://github.com/GitMazzone/founderbento-repo.git [MY-APP-NAME]
 ```
 
-2. Go to your project's dir
+Go to your project's dir
 
 ```bash
 cd [MY-APP-NAME]
 ```
 
-3. Install node modules
+Install node modules
 
 ```bash
 npm install
 ```
 
-4. Remove this repo as remote 👋
+Remove this repo as remote 👋
 
 ```bash
 git remote remove origin
 ```
 
-5. Get started!
+Add a local `.env` file with the minimal required variables
+
+```bash
+touch .env.local
+&& echo "NEXT_PUBLIC_SUPABASE_URL=https://YOUR_SUPABASE_URL.supabase.co" >> .env.local
+&& echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY" >> .env.local
+```
+
+Get started!
 
 ```bash
 npm run dev
 ```
 
-Go to [http://localhost:3000](http://localhost:3000) to see an overview of your founder bento and to start the tutorial.
+Visit [http://localhost:3000](http://localhost:3000) to get oriented.
 
-If you need help after the tutorial, dm me on [Twitter](https://twitter.com/gitmazzone) or email me @ mazzone.dev@gmail.com
+For help, dm me on [Twitter](https://twitter.com/gitmazzone) or email me @ <mazzone.dev@gmail.com>
 
-🐞 If you find bugs, please open an issue on the repo.
+Find a bug? Feel free to open an issue against the repo.
 
 From one solopreneur to another -- thank you for your support. ♡

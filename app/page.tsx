@@ -1,13 +1,7 @@
-'use client';
+'use client'; // Can remove client-side demo code and make this server-side
 
 import { Callout, Card, Spacer } from '@/components';
-import {
-  ArrowRight,
-  Code,
-  Layout,
-  PuzzlePiece,
-  Toolbox,
-} from '@phosphor-icons/react';
+import { ArrowRight, Layout } from '@phosphor-icons/react';
 import Link from 'next/link';
 import { FunctionComponent, ReactElement } from 'react';
 
@@ -42,32 +36,11 @@ const CardSection: FunctionComponent<CardInfo> = ({
 
 const cards: CardInfo[] = [
   {
-    href: '/tutorial/stack',
-    icon: <Code className={'h-6 w-6'} />,
-    title: 'Your FounderBento',
-    description:
-      'Quickstart guides to launch your MVP today. Everything you need to go from idea to first paying customer: database, login, API routes, payments, customer support, SEO, analytics, and more.',
-  },
-  {
-    href: '/tutorial/template-pages',
+    href: '/landing',
     icon: <Layout className={'h-6 w-6'} />,
-    title: 'Landing pages',
+    title: 'Sample landing page',
     description:
-      'Effective layouts that convert. Built-in guidance for great copy & graphics.',
-  },
-  {
-    href: '/tutorial/components',
-    icon: <PuzzlePiece className={'h-6 w-6'} />,
-    title: 'Component library',
-    description:
-      'Focused on plug-and-play & simplicity rather than generic reusability & complexity. Keep what you like, change what you need, get your MVP out today.',
-  },
-  {
-    href: '/tutorial/tools',
-    icon: <Toolbox className={'h-6 w-6'} />,
-    title: 'Prompts & third-party tools',
-    description:
-      '10x your productivity with these tools I regret not creating myself.',
+      'An effective layout that converts. Built-in guidance for great copy & graphics.',
   },
 ];
 

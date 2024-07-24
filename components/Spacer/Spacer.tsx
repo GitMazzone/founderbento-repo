@@ -5,5 +5,5 @@ type SpacerProps = {
 };
 
 export const Spacer: FunctionComponent<SpacerProps> = ({ type }) => {
-  return <div className={type === 'component' ? 'py-4' : 'py-12'}></div>;
+  return <div className={type === 'component' ? 'py-4' : 'py-8'}></div>;
 };
