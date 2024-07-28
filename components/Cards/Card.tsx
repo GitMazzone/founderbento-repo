@@ -1,7 +1,7 @@
 'use client';
 
 import { FunctionComponent, ReactNode } from 'react';
-import cn from 'classnames';
+import { cn } from '@/lib';
 
 type CardProps = {
   children: ReactNode;

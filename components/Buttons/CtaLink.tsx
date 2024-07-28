@@ -3,7 +3,7 @@
 import { FunctionComponent, ReactNode } from 'react';
 import styles from './CtaLink.module.css';
 import Link from 'next/link';
-import cn from 'classnames';
+import { cn } from '@/lib';
 
 type CtaButtonProps = {
   children: ReactNode;

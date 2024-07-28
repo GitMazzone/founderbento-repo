@@ -1,8 +1,9 @@
 import { Merriweather } from 'next/font/google';
 import '../styles/globals.css';
-import { AuthProvider, Footer, Navbar } from '@/components';
+import { Footer, Navbar } from '@/components';
 import { ReactNode } from 'react';
-import cn from 'classnames';
+import { cn } from '@/lib';
+import { AuthProvider } from '@/lib/auth';
 import { baseMetadata } from '@/config';
 
 // TODO: move font to fonts.ts, pick global default & move MW to heading only

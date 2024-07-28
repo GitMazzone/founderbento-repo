@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, FunctionComponent } from 'react';
-import cn from 'classnames';
+import { cn } from '@/lib';
 
 export const ThemeToggle: FunctionComponent = () => {
   const [isDark, setIsDark] = useState(false);

@@ -31,9 +31,7 @@ git remote remove origin
 Add a local `.env` file with the minimal required variables
 
 ```bash
-touch .env.local
-&& echo "NEXT_PUBLIC_SUPABASE_URL=https://YOUR_SUPABASE_URL.supabase.co" >> .env.local
-&& echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY" >> .env.local
+touch .env.local && echo "NEXT_PUBLIC_SUPABASE_URL=https://YOUR_SUPABASE_URL.supabase.co" >> .env.local && echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY" >> .env.local
 ```
 
 Get started!
